@@ -9,6 +9,6 @@ export class NewsService {
   constructor(public _http:HttpClient) { }
   getnews():Observable<any>
 {
-  return this._http.get("https://projecttest2.000webhostapp.com/project/web_service/news.php")
+  return this._http.get("http://front-end-fresh.com/newsjson.php")
 }
 }
