@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div class="text-center m-5 ">
+            <h1 class="header-news">مباريات  بطولة كاس الامم الافريقية </h1>
+        </div>
+        
+
+
+        <div class="row" *ngFor="let m of matches_container">
+            <div class="col-12 border">
+                <div class="matche-news text-center p-3 mb-5">
+                        <div class="row">
+                            <div class="col-4 m-auto">
+                                <a href="#" class="text-decoration-none">
+                                  <img src="{{m.teama_image}}" class="img- fluid"/>
+                                  <p>{{m.teamaname}}</p></a> 
+                            </div>
+                            <div class="col-4 m-auto m-0">
+                                <p class="text-center">{{m.gra_matches_date_time}}</p>
+                                <p class="text-center">{{m.gra_stadium_name}}</p>
+                            </div>
+                            <div class="col-4 m-auto">
+                                    <a href="#" class="text-decoration-none">
+                                      <img src="{{m.teamb_image}}" class="img-fluid" alt="صورة الطرف الاول"/>
+                                      <p>{{m.gra_team_name}} </p></a>
+                            </div>
+                        </div>
+                        <a href="matches.php?do=singlmatches&matcheid='.$get_news_query_rows['gra_matches_id'].'" class="btn btn-outline-dark float-left">التفاصيل </a>
+                    </div>
+                </div>
+            </div>
+          
+          
+          
+          
+          </div>

@@ -1,0 +1,183 @@
+<div class="container border border-top-0 border-bottom-0">
+    <div class="news-section mt-4">
+        <div class="news-header ">
+            <h1 class="text-center "> <i class="far fa-newspaper news-icon"></i> الاخبار </h1>
+        </div>
+    
+        <div class="clr"> </div>
+    
+        <div class="news-sec text-center mt-4">
+            <div class="row">
+                <div class="col-lg-6" *ngFor="let news of news_container | slice:0:4;   let i = index" [attr.data-index]="i">
+                    <div clas="container-fluid">
+                        <div class="row">		
+                            <div class="col-lg-12 ">
+                                    <div class="news-2-1">
+                                        <div class="news-2 ">
+                                            <a routerLink="/singlenews/{{i+1}}/{{i}}">
+                                                <img src="{{news.news_image}}" class="img-fluid rounded"/>
+                                                <p class="text-right news-1-title p-1 mx-auto">{{news.gra_news_title}} </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>							
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="w-100 ">
+                <a routerLink="/News" class="btn btn-block btn-sm btn-all-teams text-left mt-2 rounded-0 ">  <i class="fas fa-caret-left"></i> <i class="fas fa-caret-left"></i>  كل الاخبار</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container border border-top-0 border-bottom-0">
+        <div class="teams-section  mt-4">
+            <div class="teams-header ">
+                <h1 class="text-center"> <i class="far fa-flag teams-icon"></i> المنتخبات </h1>
+            </div>
+            <div class="clr"></div>
+            <div class="row">
+
+
+
+                    <div class="col-lg-6 col-md-12 col-sm-12" *ngFor="let teams of teams_container | slice:0:4;  ">
+                            <div class="team-card border p-2 rounded mb-3">
+                                <a href="#">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <ul class="text-right pr-2">
+                                                <li class="team-name">منتخب : {{teams.gra_team_name}}<i class="far fa-flag "></i> </li>
+                                                <li class="team-coach">المدرب : {{teams.gra_team_coach}}<i class="fas fa-chalkboard-teacher"></i> </li>
+                                                <li class="team-chmpions">عدد البطولات : {{teams.gra_team_champion_wins}}<i class="fas fa-trophy"></i> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                    <img src="{{teams.team_image}}" class="img-fluid mt-4">
+                                    </div>
+                                </div>
+    
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div> 
+                    <div class="w-100 ">
+                            <a routerLink="/Teams" class="btn btn-block btn-sm btn-all-teams text-left rounded-0">  <i class="fas fa-caret-left"></i> <i class="fas fa-caret-left"></i>  كل المنتخبات</a>
+                    </div>
+                </div>		
+            </div>
+
+
+
+
+
+
+
+
+
+
+<div class="container border border-top-0 border-bottom-0">
+    <div class="country mt-4">
+        <div class="country-header ">
+            <h1 class="text-center"> <i class="fas fa-gopuram country-icon"></i> المدن المضيفة </h1>
+        </div>
+        <div class="clr"></div>
+        <div class="row">
+
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-3 mx-auto"  *ngFor="let country of country_container  ">
+                <div class="country-card">
+                    <img class="img-fluid rounded" src="{{country.country_image}}"/>
+                    <h3 class="text-right m-3"> {{country.gra_country_name}}  </h3>
+                    <a  routerLink="/Country" class="btn  btn-sm btn-block text-left btn-all-teams rounded-0"> <i class="fas fa-caret-left"></i><i class="fas fa-caret-left"></i>   اكتشف المز يد</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container border border-top-0 border-bottom-0 mt-5">
+        <div class="stad mt-4">
+            <div class="country-header ">
+                <h1 class="text-center "> <i class="fas fa-hockey-puck country-icon"></i> الاستادات  </h1>
+            </div>
+            <div class="clr"></div>
+            <div class="row mx-auto">
+
+
+
+
+
+					<div class="col-lg-4 mt-5 mx-auto" *ngFor="let stad of stad_container  ">
+                            <div class="card">
+                                <img src="{{stad.stadium_image}}" class=" img-fluid rounded" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title text-right">{{stad.gra_stadium_name}} </h5>
+                                    <p class="card-text text-right"> '{{stad.gra_stadium_description | slice:0:90}} ...</p>
+                                    <a href="#" class="btn rounded-0 btn-sm btn-block btn-outline-info text-left"> <i class="fas fa-caret-left"></i><i class="fas fa-caret-left"></i> المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+				
+                </div>
+        </div>

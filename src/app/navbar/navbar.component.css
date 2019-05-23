@@ -1,0 +1,59 @@
+
+a{
+    text-decoration: none !important;
+}
+/*header design and media query*/
+.headera{
+    background-image: url('../../assets/header3.jpg');
+    color: #FFF;
+}
+.headera h1{
+    font-size: 70px;
+    font-weight: 600; 
+	color: #FFF!important;
+}
+.header-icon{
+    font-size: 60px;
+    color:#f39c12;
+}
+@media (max-width: 600px) {
+    .headera h1{
+        font-size: 23px;
+        padding: 0px;
+    }
+    .header-icon {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .headera h1{
+        font-size: 40px;
+        padding: 0px;
+    }
+    .header-icon {
+        font-size: 35px;
+    }
+} 
+/*header design and media query end*/
+
+/* navabr customizing navbar and fixed on sceoll */
+.navbar-light .navbar-nav .nav-link {
+    color:#f39c12;
+    font-size: 30px;
+    transition: .5s;
+    border-radius: 5px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:#FFF;
+    background-color: #f39c12;
+}
+.header{
+    z-index: 5000;
+}
+.sticky {
+    top: 0;
+    width: 100%;
+    position: fixed;
+
+}
+/*end customizing navbar and f*/

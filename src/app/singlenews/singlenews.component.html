@@ -1,0 +1,13 @@
+<h1 class="text-center p-3">اخبار كاس امم افريقيا</h1>
+
+
+
+
+<div class="container border p-3" *ngFor="let news of news_container | slice:index:id">
+    <h3 class="text-right p-3">{{news.gra_news_title}}</h3>
+    <p class="text-right">التاريخ: {{news.gra_news_date_time}}</p>
+    <div class="singlenewsimg text-right">
+      <img src="{{news.news_image}}" class="img-fluid rounded"/>
+    </div>	
+    <p class="text-right p-3 newslgcontent">{{news.gra_news_large_content}}</p>
+  </div>	

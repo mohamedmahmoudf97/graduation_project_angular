@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="text-center m-5 ">
+        <h1 class="header-news">منتخبات بطولة كاس الامم الافريقية </h1>
+    </div>
+    <div class="row">
+
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12 border-top border-bottom border-left" *ngFor="let team of teams_container">
+            <div class="row mb-2 mt-2">
+                <div class="col-9">
+                    <a href="#" class="text-decoration-none text-dark font-weight-bolder text-right">
+                        <div class="team-des"> 
+                            <ul class="list-group">
+                                <li class="list-group-item">منتخب :{{team.gra_team_name}}<i class="far fa-flag "></i> </li>
+                                <li class="list-group-item">المدرب :{{team.gra_team_coach}} <i class="fas fa-chalkboard-teacher"></i> </li>
+                                <li class="list-group-item">عدد البطولات : {{team.gra_team_champion_wins}}<i class="fas fa-trophy"></i> </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#">
+                        <div class="team-img text-center">
+                            <img src="{{team.team_image}}" class="img-fluid rounded mt-4 p-2 "/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>

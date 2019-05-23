@@ -1,0 +1,168 @@
+/*news section start*/
+.news-header{
+    font-family: 'Lemonada', cursive;
+    font-weight: 500;
+}
+.news-icon{
+    font-size: 60px;
+    color: #e24545 ;
+}
+.news-sec{
+    height: 600px;
+}
+.news-sec a{
+    text-decoration: none !important;
+}
+.news-1-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+.news-2{
+    height: 270px;
+}
+.news-1-link img{
+    width: 100% !important;
+	
+    transition: .5s;
+    overflow: hidden;
+}
+.news-1-link:hover img{
+    transform: scale(1.02,1.02);
+}
+.news-2 p{
+    font-size: 20px;
+}
+.news-2 a img{
+	
+    transition: .5s;
+}
+.news-2 a:hover img{
+    transform: scale(1.02,1.02);
+}
+.news-1-title p
+{
+	height: 150px !important;
+}
+@media (max-width: 600px) {
+    .news-sec{
+        height: auto;
+    }
+    .news-2{
+        height: auto;
+    }
+    .news-1-title{
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+	.news-2 a img{
+	height: 135px !important;
+    transition: .5s;
+}
+}
+@media only screen and (min-width: 600px) {
+    .news-sec{
+        height: auto;
+        font-size: 25px;
+    }
+    .news-2{
+        height: auto;
+    }
+    .news-1-title{
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+    }
+    .news-2 p{
+        font-size: 25px;
+    }
+	.news-2 a img{
+	height: 325px !important;
+    transition: .5s;
+}
+} 
+/*news section and media query*/
+/*teams section start*/
+.teams-header{
+    font-family: 'Lemonada', cursive;
+    font-weight: 500;
+}
+.teams-icon{
+    font-size: 60px;
+    color: #f39c12 ;
+}
+.team-card ul li{
+list-style: none;
+font-size: 32px;
+}
+.team-card a{
+    text-decoration: none !important;
+    color: black;
+}
+.team-card img{
+    width:70px;
+    height: 70px;;
+}
+.team-card{
+    transition: .5s;
+}
+.team-card:hover{
+    background-color: #ecf0f1;
+}
+.btn-all-teams{
+    background-color: #f39c12;
+    color: #FFF;
+    font-family: 'Lemonada', cursive;
+    font-weight: 900;
+}
+@media (max-width: 600px) {
+    
+    .team-card ul li{
+    list-style: none;
+    font-size: 18px;
+    }
+    .team-card img{
+        width:50px;
+        height: 50px;;
+    }
+    
+}
+@media only screen and (min-width: 600px) {
+    
+    .team-card ul li{
+    list-style: none;
+    font-size: 23px;
+    }
+} 
+@media only screen and (min-width: 400px) {
+    .team-card ul li{
+    list-style: none;
+    font-size: 26px;
+    font-weight: 900;
+    }
+    
+} 
+/*teams section end*/
+
+/*country section start*/
+.country-header{
+    font-family: 'Lemonada', cursive;
+    font-weight: 500;
+}
+.country-icon{
+    font-size: 60px;
+    color: #2980b9 ;
+}
+.country-card img{
+    height: 400px;
+    width: 100%;
+}
+.country-card{
+    font-weight: 900;
+    font-style: italic;
+}
+/*country section end*/
+.card img{
+    height: 250px !important;
+}
